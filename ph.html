@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फार्म हेल्पर - पिक शिफारस</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌿 फार्म हेल्पर</h1>
+            <p>मातीच्या पीएच आणि हंगामाच्या आधारावर पिके लागवडीसाठी तुमचा मार्गदर्शक.</p>
+        </div>
+        <div class="form-container">
+            <h2>तुमच्या मातीची माहिती प्रविष्ट करा</h2>
+            <form id="cropForm">
+                <div class="input-group">
+                    <label for="ph">मातीचा पीएच:</label>
+                    <input type="number" id="ph" name="ph" step="0.1" min="0" max="14" required>
+                </div>
+                <div class="input-group">
+                    <label for="season">हंगाम:</label>
+                    <select id="season" name="season" required>
+                        <option value="" disabled selected>हंगाम निवडा</option>
+                        <option value="spring">वसंत</option>
+                        <option value="summer">उन्हाळा</option>
+                        <option value="monsoon">पावसाळा</option>
+                        <option value="winter">हिवाळा</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">शिफारस केलेली पिके मिळवा</button>
+            </form>
+            <div id="result" class="result"></div>
+        </div>
+        <div id="cropInfo" class="crop-info">
+            <h2>पिकांची माहिती</h2>
+            <div id="cropTabs" class="crop-tabs">
+                <!-- शिफारस केलेल्या प्रत्येक पिकासाठी टॅब्स इथे डायनॅमिकली तयार केले जातील -->
+            </div>
+            <div id="cropContent" class="crop-content">
+                <!-- निवडलेल्या पिकाची तपशीलवार माहिती येथे दर्शविली जाईल -->
+            </div>
+        </div>
+    </div>
+
+    <script src="ph.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Guide - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Enhanced Header with Logos and Website Name -->
+    <header class="main-header">
+        <img src="krushi.png" alt="Logo Left" class="logo-left">
+        <div class="site-title">क्रॉप गाईड</div>
+        <img src="krushi.png" alt="Logo Right" class="logo-right">
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="features.html" id="featuresBtn"Features</a></li>
+            <li><a href="login.html">लॉगिन</a></li>
+            <li><a href="about.html" id="aboutBtn">About Us</a></li>
+            <li><a href="contact.html">संपर्क</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Text on Image -->
+    <section class="hero">                                                                                
+        <img src="farmland.jpg" alt="Farmland Hero Image" class="hero-img">
+        <div class="hero-text">
+            <h1>क्रॉप गाईडमध्ये आपले स्वागत आहे</h1>
+            <p>उत्तम पीक व माहितीपूर्ण निर्णय घेण्यात शेतकऱ्यांना मदत करणे</p>
+	  <button onclick="window.location.href='register.html'" class="register-btn">नोंदणी करा</button>
+
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tabs-container">
+        <div class="tabs">
+            <button class="tab-link" onclick="openTab(event, 'Importance')">पीक योग्यतेचे महत्त्व</button>
+            <button class="tab-link" onclick="openTab(event, 'PH')">मातीच्या Ph चे महत्त्व</button>
+            <button class="tab-link" onclick="openTab(event, 'Features')">आमची वैशिष्ट्ये</button>
+        </div>
+
+        <div id="Importance" class="tab-content">
+            <h2>पीक योग्यतेचे महत्त्व</h2>
+            <p>तुमच्या शेतासाठी योग्य वेळी योग्य पिकांची निवड करणे उत्पादन वाढवण्यासाठी आणि मातीची आरोग्य टिकवून ठेवण्यासाठी खूप महत्त्वाचे आहे. स्थानिक हवामान आणि मातीच्या परिस्थितीस अनुरूप पिकांची लागवड केल्याने उत्पन्नाचा दर्जा लक्षणीयरीत्या सुधारतो आणि रासायनिक खतांचा किंवा कीटकनाशकांचा वापर कमी करण्यास मदत होते.</p>
+        </div>
+
+        <div id="PH" class="tab-content">
+            <h2>मातीच्या Ph चे महत्त्व</h2>
+            <p>मातीचा pH पिकांच्या वाढीसाठी आवश्यक पोषक तत्वांची उपलब्धता ठरवण्यात महत्त्वाची भूमिका बजावतो. वेगवेगळ्या पिकांना वेगवेगळ्या pH स्तरांमध्ये चांगली वाढ होते. आम्लीय किंवा क्षारीय माती पिकांच्या पोषक तत्व शोषण क्षमतेला मर्यादित करते, ज्यामुळे वाढीवर परिणाम होतो. मातीचा pH समजून घेऊन त्यानुसार त्याचे समायोजन केल्यास पिकांचे उत्पादन वाढवता येते.</p>
+        </div>
+
+        <div id="Features" class="tab-content">
+            <h2>आमची वैशिष्ट्ये</h2>
+            <p>क्रॉप गाइड विविध वैशिष्ट्ये प्रदान करते, ज्यामध्ये मातीची तपासणी, पिकांची योग्यतासंबंधी विश्लेषण आणि हवामानावर आधारित सूचना समाविष्ट आहेत. आमच्या साधनामुळे शेतकरी कोणती पिके लावायची आणि ती कधी लावायची याबद्दल योग्य निर्णय घेऊ शकतात.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Crop Guide | डेटा आधारित उपायांसह शेतकऱ्यांना सक्षम करणे</p>
+    </footer>
+
+    <script src="intro1.js"></script>
+</body>
+</html>
